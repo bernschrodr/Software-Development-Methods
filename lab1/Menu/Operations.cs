@@ -10,6 +10,7 @@ namespace Menu{
         Cos = 8,
         Pow = 9,
         Sqrt = 10,
+        ToBinary = 11,
         Exit = 0,
         Continue = -1
     }

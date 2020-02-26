@@ -23,7 +23,8 @@ namespace Menu
             {
                 const string MenuText = "(1) - Input Number \n(2) - Sum \n(3) - Subtract \n(4) - Multiply\n" +
                 "(5) - Divide \n(6) - Print Result \n(7) - Sin"+
-                "\n(8) - Cos \n(9) - Pow \n(10) - Sqrt \n(0) - Exit\n";
+                "\n(8) - Cos \n(9) - Pow \n(10) - Sqrt \n" +
+                "(11) - To Binary\n\n(0) - Exit\n";
                 Console.WriteLine(MenuText);
                 string inputLine = Console.ReadLine();
                 int inputOperation = -1;
@@ -77,6 +78,10 @@ namespace Menu
                             break;
                         case Operations.Sqrt:
                             result = Sqrt(InputNumber());
+                            WriteResult();
+                            break;
+                        case Operations.ToBinary:
+                            result = ToBinary(InputNumber());
                             WriteResult();
                             break;
                         case Operations.Exit:

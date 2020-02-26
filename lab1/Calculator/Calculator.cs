@@ -73,5 +73,10 @@ namespace Calculator
         public static decimal Sqrt(decimal number){
             return Convert.ToDecimal(Math.Sqrt(Convert.ToDouble(number)));
         }
+
+        public static decimal ToBinary(decimal number){
+            int num = Convert.ToInt32(number);
+            return Convert.ToDecimal(Convert.ToString(num,2));
+        }
     }
 }

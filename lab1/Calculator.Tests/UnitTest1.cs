@@ -84,5 +84,13 @@ namespace Calculator.Tests
             decimal result = Calculator.Sqrt(num);
             Assert.AreEqual(Convert.ToDouble(result), Convert.ToDouble(expectedResult), 0.000001);
         }
+        [Test]
+        public void TestToBinary()
+        {
+            decimal num = 11;
+            decimal expectedResult = 1011;
+            decimal result = Calculator.ToBinary(num);
+            Assert.AreEqual(Convert.ToDouble(result), Convert.ToDouble(expectedResult), 0.000001);
+        }
     }
 }
