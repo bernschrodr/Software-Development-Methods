@@ -58,5 +58,12 @@ namespace Calculator.Tests
             Assert.AreEqual(Convert.ToDouble(expectedResult),Convert.ToDouble(result), 0.0001);
 
         }
+        [Test]
+        public void TestCos(){
+            decimal num = 1.0472M;
+            decimal expectedResult = 0.5M;
+            decimal result = Calculator.Cos(num);
+            Assert.AreEqual(Convert.ToDouble(expectedResult),Convert.ToDouble(result), 0.0001);
+        }
     }
 }
