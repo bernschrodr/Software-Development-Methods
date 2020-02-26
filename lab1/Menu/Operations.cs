@@ -8,6 +8,8 @@ namespace Menu{
         PrintResult = 6,
         Sin = 7,
         Cos = 8,
+        Pow = 9,
+        Sqrt = 10,
         Exit = 0,
         Continue = -1
     }

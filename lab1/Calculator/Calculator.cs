@@ -52,12 +52,26 @@ namespace Calculator
             return firstNumber / secondNumber;
         }
 
-        public static decimal Sin(decimal number){
+        public static decimal Sin(decimal number)
+        {
             return Convert.ToDecimal(Math.Sin(Convert.ToDouble(number)));
         }
 
-        public static decimal Cos(decimal number){
+        public static decimal Cos(decimal number)
+        {
             return Convert.ToDecimal(Math.Cos(Convert.ToDouble(number)));
+        }
+
+        public static decimal Pow(decimal number, decimal pow)
+        {
+            double num = Convert.ToDouble(number);
+            double pw = Convert.ToDouble(pow);
+            return Convert.ToDecimal(Math.Pow(num, pw));
+
+        }
+
+        public static decimal Sqrt(decimal number){
+            return Convert.ToDecimal(Math.Sqrt(Convert.ToDouble(number)));
         }
     }
 }
