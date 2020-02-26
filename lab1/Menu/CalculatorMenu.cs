@@ -61,27 +61,23 @@ namespace Menu
                             WriteResult();
                             break;
                         case Operations.Sin:
-                            result = Sin(InputNumber());
+                            result = Sin(result);
                             WriteResult();
                             break;
                         case Operations.Cos:
-                            result = Cos(InputNumber());
+                            result = Cos(result);
                             WriteResult();
                             break;
                         case Operations.Pow:
-                            Console.Write("Input num: ");
-                            decimal num = InputNumber();
-                            Console.Write("Input Pow: ");
-                            decimal pow = InputNumber();
-                            result = Pow(num,pow);
+                            result = Pow(result,InputNumber());
                             WriteResult();
                             break;
                         case Operations.Sqrt:
-                            result = Sqrt(InputNumber());
+                            result = Sqrt(result);
                             WriteResult();
                             break;
                         case Operations.ToBinary:
-                            result = ToBinary(InputNumber());
+                            result = ToBinary(result);
                             WriteResult();
                             break;
                         case Operations.Exit:
