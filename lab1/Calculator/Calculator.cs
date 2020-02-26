@@ -1,3 +1,5 @@
+using System;
+
 namespace Calculator
 {
     /// <summary>
@@ -48,6 +50,14 @@ namespace Calculator
         public static decimal Divide(decimal firstNumber, decimal secondNumber)
         {
             return firstNumber / secondNumber;
+        }
+
+        public static decimal Sin(decimal number){
+            return Convert.ToDecimal(Math.Sin(Convert.ToDouble(number)));
+        }
+
+        public static decimal Cos(decimal number){
+            return Convert.ToDecimal(Math.Cos(Convert.ToDouble(number)));
         }
     }
 }
