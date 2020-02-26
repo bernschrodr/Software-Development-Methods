@@ -21,7 +21,9 @@ namespace Menu
         {
             while (true)
             {
-                Console.WriteLine("(1) - Input Number\n (2) - Sum\n (3) - Subtract\n (4) - Multiply\n (5) - Divide\n (6) - Print Result\n (0) - Exit\n");
+                const string MenuText = "(1) - Input Number \n(2) - Sum \n(3) - Subtract \n(4) - Multiply\n" +
+                "(5) - Divide \n(6) - Print Result \n(7) - Sin \n(0) - Exit\n";
+                Console.WriteLine(MenuText);
                 string inputLine = Console.ReadLine();
                 int inputOperation = -1;
                 if (!Int32.TryParse(inputLine, out inputOperation))
@@ -54,6 +56,10 @@ namespace Menu
                             break;
                         case Operations.Divide:
                             result = Divide(result,InputNumber());
+                            WriteResult();
+                            break;
+                        case Operations.Sin:
+                            result = Sin(InputNumber());
                             WriteResult();
                             break;
                         case Operations.Exit:

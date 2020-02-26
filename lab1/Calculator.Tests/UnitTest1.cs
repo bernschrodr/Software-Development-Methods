@@ -49,5 +49,14 @@ namespace Calculator.Tests
             decimal result = Calculator.Divide(a, b);
             Assert.AreEqual(expectedResult, result);
         }
+
+        [Test]
+        public void TestSin(){
+            decimal num = 1.745M;
+            decimal expectedResult = 0.98480775301M;
+            decimal result = Calculator.Sin(num);
+            Assert.AreEqual(Convert.ToDouble(expectedResult),Convert.ToDouble(result), 0.0001);
+
+        }
     }
 }
