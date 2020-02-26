@@ -51,27 +51,38 @@ namespace Calculator.Tests
         }
 
         [Test]
-        public void TestSin(){
+        public void TestSin()
+        {
             decimal num = 1.745M;
             decimal expectedResult = 0.98480775301M;
             decimal result = Calculator.Sin(num);
-            Assert.AreEqual(Convert.ToDouble(expectedResult),Convert.ToDouble(result), 0.0001);
+            Assert.AreEqual(Convert.ToDouble(expectedResult), Convert.ToDouble(result), 0.0001);
 
         }
         [Test]
-        public void TestCos(){
+        public void TestCos()
+        {
             decimal num = 1.0472M;
             decimal expectedResult = 0.5M;
             decimal result = Calculator.Cos(num);
-            Assert.AreEqual(Convert.ToDouble(expectedResult),Convert.ToDouble(result), 0.0001);
+            Assert.AreEqual(Convert.ToDouble(expectedResult), Convert.ToDouble(result), 0.0001);
         }
         [Test]
-        public void TestPow(){
+        public void TestPow()
+        {
             decimal num = 12;
             decimal pow = 4;
             decimal expectedResult = 20_736;
-            decimal result = Calculator.Pow(num,pow);
-            Assert.AreEqual(result,expectedResult);
+            decimal result = Calculator.Pow(num, pow);
+            Assert.AreEqual(result, expectedResult);
+        }
+        [Test]
+        public void TestSqrt()
+        {
+            decimal num = 11;
+            decimal expectedResult = 3.31662479036M;
+            decimal result = Calculator.Sqrt(num);
+            Assert.AreEqual(Convert.ToDouble(result), Convert.ToDouble(expectedResult), 0.000001);
         }
     }
 }

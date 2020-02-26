@@ -69,5 +69,9 @@ namespace Calculator
             return Convert.ToDecimal(Math.Pow(num, pw));
 
         }
+
+        public static decimal Sqrt(decimal number){
+            return Convert.ToDecimal(Math.Sqrt(Convert.ToDouble(number)));
+        }
     }
 }
