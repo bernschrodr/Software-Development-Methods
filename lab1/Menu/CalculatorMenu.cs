@@ -1,5 +1,6 @@
 using System.IO;
 using System;
+using static Calculator.Calculator;
 
 namespace Menu
 {
@@ -40,19 +41,19 @@ namespace Menu
                             WriteResult();
                             break;
                         case Operations.Sum:
-                            result += InputNumber();
+                            result = Sum(result,InputNumber());
                             WriteResult();
                             break;
                         case Operations.Substract:
-                            result -= InputNumber();
+                            result = Subtract(result,InputNumber());
                             WriteResult();
                             break;
                         case Operations.Multiply:
-                            result *= InputNumber();
+                            result = Multiply(result, InputNumber());
                             WriteResult();
                             break;
                         case Operations.Divide:
-                            result /= InputNumber();
+                            result = Divide(result,InputNumber());
                             WriteResult();
                             break;
                         case Operations.Exit:
