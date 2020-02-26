@@ -23,7 +23,7 @@ namespace Menu
             {
                 const string MenuText = "(1) - Input Number \n(2) - Sum \n(3) - Subtract \n(4) - Multiply\n" +
                 "(5) - Divide \n(6) - Print Result \n(7) - Sin"+
-                "\n(8) - Cos \n(0) - Exit\n";
+                "\n(8) - Cos \n(9) - Pow \n(0) - Exit\n";
                 Console.WriteLine(MenuText);
                 string inputLine = Console.ReadLine();
                 int inputOperation = -1;
@@ -65,6 +65,14 @@ namespace Menu
                             break;
                         case Operations.Cos:
                             result = Cos(InputNumber());
+                            WriteResult();
+                            break;
+                        case Operations.Pow:
+                            Console.Write("Input num: ");
+                            decimal num = InputNumber();
+                            Console.Write("Input Pow: ");
+                            decimal pow = InputNumber();
+                            result = Pow(num,pow);
                             WriteResult();
                             break;
                         case Operations.Exit:

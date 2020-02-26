@@ -65,5 +65,13 @@ namespace Calculator.Tests
             decimal result = Calculator.Cos(num);
             Assert.AreEqual(Convert.ToDouble(expectedResult),Convert.ToDouble(result), 0.0001);
         }
+        [Test]
+        public void TestPow(){
+            decimal num = 12;
+            decimal pow = 4;
+            decimal expectedResult = 20_736;
+            decimal result = Calculator.Pow(num,pow);
+            Assert.AreEqual(result,expectedResult);
+        }
     }
 }
