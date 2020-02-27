@@ -1,0 +1,6 @@
+[submodule "codex.bot"]
+	path = codex.bot
+	url = https://github.com/codex-team/codex.bot
+[submodule "editor.js"]
+	path = editor.js
+	url = https://github.com/codex-team/editor.js
